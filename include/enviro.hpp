@@ -1,4 +1,14 @@
-From aero-cpp-lib/include/Sensors.hpp
+//From aero-cpp-lib/include/Sensors.hpp
+
+/**
+ * @brief Raw environmental sensor data 
+ */
+struct __attribute__((__packed__)) Enviro_t
+{
+    uint16_t altitude;
+    uint16_t temperature; 
+    uint16_t pressure; 
+};
 
 /**
  * @brief Abstract environmental sensor definition
